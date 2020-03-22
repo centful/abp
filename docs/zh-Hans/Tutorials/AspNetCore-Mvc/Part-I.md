@@ -66,7 +66,7 @@ namespace Acme.BookStore
 }
 ````
 
-* ABP为实体提供了两个基本的基类: `AggregateRoot`和`Entity`. **Aggregate Root**是**域驱动设计(DDD)** 概念之一. 有关详细信息和最佳做法,请参阅[实体文档](https://docs.abp.io/zh-Hans/abp/latest/Entities).
+* ABP为实体提供了两个基本的基类: `AggregateRoot`和`Entity`. **Aggregate Root**是**领域驱动设计(DDD)** 概念之一. 有关详细信息和最佳做法,请参阅[实体文档](https://docs.abp.io/zh-Hans/abp/latest/Entities).
 * `Book`实体继承了`AuditedAggregateRoot`,`AuditedAggregateRoot`类在`AggregateRoot`类的基础上添加了一些审计属性(`CreationTime`, `CreatorId`, `LastModificationTime` 等).
 * `Guid`是`Book`实体的主键类型.
 * 使用 **数据注解** 为EF Core添加映射.或者你也可以使用 EF Core 自带的[fluent mapping API](https://docs.microsoft.com/en-us/ef/core/modeling).
